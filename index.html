@@ -3,20 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/80439268e7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./main.css" />
     <title>Codenames</title>
   </head>
   <body>
     <header class="header">
-      <h1>Code Names</h1>
+      <h1>Codenames</h1>
+
+      <input class="hint" type="text" />
+      <input class="number-guests" type="number" />
+
+      <input type="submit" />
+      <h1>Score:</h1>
+      <h2>Red</h2>
+      <h3>0</h3>
+      <h2>Blue</h2>
+      <h3>0</h3>
     </header>
-    <main>
-      Squares
-    </main>
-    <section>
-      <p>Sidebar</p>
-    </section>
+    <div class="flex-wrapper">
+      <main class="game-board">
+        <div class="flex-row">
+          <div class="card-reveal-grey">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card-reveal-red">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card-reveal-blue">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card-reveal-black">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="flipped">Card Text</p>
+            <p class="card-text">Card Text</p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+          <div class="card">
+            <p class="card-text">Card Text</p>
+          </div>
+        </div>
+      </main>
+      <section>
+        <div class="sidebar">
+          <i class="burger fas fa-bars"></i>
+          <button>New Game</button>
+        </div>
+      </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>

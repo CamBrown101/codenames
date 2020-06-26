@@ -1,0 +1,121 @@
+.header {
+  background-color: #141301;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.sidebar {
+  background-color: #141301;
+  height: 100vh;
+  width: 5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+.card {
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+.flipped {
+  transform: scale(-1);
+}
+.card-reveal-red {
+  background-image: url('./images/red-male.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+.card-reveal-blue {
+  background-image: url('./images/blue-male.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+.card-reveal-black {
+  background-image: url('./images/black-spy.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+.card-reveal-grey {
+  background-image: url('./images/pedestrian-female.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+
+.card-text {
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+  margin: 2% 2%;
+}
+.game-board {
+  width: 85em;
+  background-color: #141301;
+}
+
+.spy-icn {
+  font-size: 70px;
+}
+.burger {
+  font-size: 50px;
+  color: whitesmoke;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
