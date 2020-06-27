@@ -1,26 +1,71 @@
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.game-board {
+  width: 85em;
+  background-color: #141301;
+}
+/* Header */
 .header {
   background-color: #141301;
   height: 5em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   color: whitesmoke;
 }
-
-.sidebar {
-  background-color: #141301;
-  height: 100vh;
-  width: 5em;
+.hint-submission {
+  font-size: 36px;
+  height: 36px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-items: center;
   align-items: center;
 }
+.submissions {
+  height: 30px;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease-in-out;
+}
+.submissions:focus {
+  outline: none;
+  transform: scale(3);
+}
 
+.submit-btn {
+  height: 35px;
+}
+.score {
+  display: flex;
+  justify-content: space-apart;
+  width: 80px;
+  padding-left: 15px;
+}
+.score h1 {
+  padding-right: 5px;
+}
+.score-wrapper {
+  padding-right: 10px;
+  width: 340px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Cards */
 .flex-wrapper {
   display: flex;
   height: 100vh;
   justify-content: space-between;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+  margin: 2% 2%;
 }
 .card {
   background-color: #ffe1a8;
@@ -34,88 +79,51 @@
   color: #141301;
   border: 4px solid whitesmoke;
 }
-.flipped {
+.flipped-text {
   transform: scale(-1);
 }
-.card-reveal-red {
+.card-reveal {
+  background-size: cover;
+  background-position: center;
+  background-color: #ffe1a8;
+  border-radius: 20px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141301;
+  border: 4px solid whitesmoke;
+}
+.red {
   background-image: url('./images/red-male.jpg');
-  background-size: cover;
-  background-position: center;
-  background-color: #ffe1a8;
-  border-radius: 20px;
-  height: 100%;
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #141301;
-  border: 4px solid whitesmoke;
 }
-.card-reveal-blue {
+.blue {
   background-image: url('./images/blue-male.png');
-  background-size: cover;
-  background-position: center;
-  background-color: #ffe1a8;
-  border-radius: 20px;
-  height: 100%;
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #141301;
-  border: 4px solid whitesmoke;
 }
-.card-reveal-black {
+.black {
   background-image: url('./images/black-spy.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-color: #ffe1a8;
-  border-radius: 20px;
-  height: 100%;
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #141301;
-  border: 4px solid whitesmoke;
 }
-.card-reveal-grey {
+.grey {
   background-image: url('./images/pedestrian-female.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-color: #ffe1a8;
-  border-radius: 20px;
-  height: 100%;
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #141301;
-  border: 4px solid whitesmoke;
 }
 
 .card-text {
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
-.flex-row {
+/* Side Bar */
+.sidebar {
+  background-color: #141301;
+  height: 100vh;
+  width: 5em;
   display: flex;
   justify-content: space-between;
-  height: 15%;
-  margin: 2% 2%;
-}
-.game-board {
-  width: 85em;
-  background-color: #141301;
-}
-
-.spy-icn {
-  font-size: 70px;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 .burger {
   font-size: 50px;
   color: whitesmoke;
-}
-body {
-  margin: 0;
-  padding: 0;
 }

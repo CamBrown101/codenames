@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/80439268e7.js"
       crossorigin="anonymous"
@@ -11,32 +15,43 @@
     <title>Codenames</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header card-text">
       <h1>Codenames</h1>
-
-      <input class="hint" type="text" />
-      <input class="number-guests" type="number" />
-
-      <input type="submit" />
-      <h1>Score:</h1>
-      <h2>Red</h2>
-      <h3>0</h3>
-      <h2>Blue</h2>
-      <h3>0</h3>
+      <form class="hint-submission">
+        <input class="hint submissions" type="text" minlength="2" />
+        <input
+          class="number-guess submissions"
+          type="number"
+          min="1"
+          max="25"
+        />
+        <input class="submit-btn" type="submit" />
+      </form>
+      <div class="score-wrapper">
+        <h1>Score:</h1>
+        <div class="score">
+          <h1>Red</h1>
+          <h1>0</h1>
+        </div>
+        <div class="score">
+          <h1>Blue</h1>
+          <h1>0</h1>
+        </div>
+      </div>
     </header>
     <div class="flex-wrapper">
       <main class="game-board">
         <div class="flex-row">
-          <div class="card-reveal-grey">
+          <div class="card-reveal grey">
             <p class="card-text">Card Text</p>
           </div>
-          <div class="card-reveal-red">
+          <div class="card-reveal red">
             <p class="card-text">Card Text</p>
           </div>
-          <div class="card-reveal-blue">
+          <div class="card-reveal blue">
             <p class="card-text">Card Text</p>
           </div>
-          <div class="card-reveal-black">
+          <div class="card-reveal black">
             <p class="card-text">Card Text</p>
           </div>
           <div class="card">
@@ -57,7 +72,7 @@
             <p class="card-text">Card Text</p>
           </div>
           <div class="card">
-            <p class="flipped">Card Text</p>
+            <p class="flipped-text card-text">Card Text</p>
             <p class="card-text">Card Text</p>
           </div>
         </div>
