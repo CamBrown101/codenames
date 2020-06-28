@@ -7,14 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/80439268e7.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/80439268e7.js"></script>
+
     <link rel="stylesheet" href="./main.css" />
     <title>Codenames</title>
   </head>
   <body>
+    <div class="pop-out-menu"></div>
     <header class="header card-text">
       <h1>Codenames</h1>
       <form class="hint-submission">
@@ -30,14 +29,20 @@
       <div class="score-wrapper">
         <h1>Score:</h1>
         <div class="score">
-          <h1>Red</h1>
-          <h1>0</h1>
+          <h1 class="red-glow">Red</h1>
+          <h1 class="red-glow">0</h1>
         </div>
         <div class="score">
-          <h1>Blue</h1>
-          <h1>0</h1>
+          <h1 class="blue-glow">Blue</h1>
+          <h1 class="blue-glow">0</h1>
         </div>
       </div>
+      <nav>
+        <div class="sidebar">
+          <i class="burger fas fa-bars"></i>
+          <button>New Game</button>
+        </div>
+      </nav>
     </header>
     <div class="flex-wrapper">
       <main class="game-board">
@@ -128,14 +133,13 @@
           </div>
         </div>
       </main>
-      <section>
-        <div class="sidebar">
-          <i class="burger fas fa-bars"></i>
-          <button>New Game</button>
-        </div>
-      </section>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

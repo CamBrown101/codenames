@@ -9,6 +9,8 @@ p {
 .game-board {
   width: 85em;
   background-color: #141301;
+  position: relative;
+  z-index: 30;
 }
 /* Header */
 .header {
@@ -34,7 +36,9 @@ p {
   outline: none;
   transform: scale(3);
 }
-
+.inputs {
+  font-size: 2em;
+}
 .submit-btn {
   height: 35px;
 }
@@ -54,6 +58,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.red-glow {
+  text-shadow: 0 0 25px #ff0000;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: red;
+}
+.blue-glow {
+  text-shadow: 0 0 25px blue;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: blue;
 }
 /* Cards */
 .flex-wrapper {
@@ -123,7 +138,22 @@ p {
   justify-items: center;
   align-items: center;
 }
+.pop-out-menu {
+  height: 100vh;
+  width: 200px;
+  background-color: aliceblue;
+  /* background-image: url('./images/key.jpg'); */
+  background-size: cover;
+  background-position: center;
+  z-index: 50;
+  position: absolute;
+  left: 81%;
+  top: 80px;
+}
 .burger {
   font-size: 50px;
   color: whitesmoke;
+}
+nav {
+  position: relative;
 }
