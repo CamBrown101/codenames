@@ -13,21 +13,10 @@
     <title>Codenames</title>
   </head>
   <body>
-
     <header class="header card-text">
       <h1>Codenames</h1>
-      <form class="hint-submission">
-        <input class="hint submissions" type="text" minlength="2" />
-        <input
-          class="number-guess submissions"
-          type="number"
-          min="1"
-          max="25"
-        />
-        <input class="submit-btn" type="submit" />
-      </form>
+
       <div class="score-wrapper">
-        <h1>Score:</h1>
         <div class="score">
           <h1 class="red-glow">Red</h1>
           <h1 class="red-glow">0</h1>
@@ -48,7 +37,7 @@
     </header>
     <div class="flex-wrapper">
       <main class="game-board">
-        <div class="flex-row">
+        <div class="flex-row top-row">
           <div class="card-reveal grey">
             <p class="card-text">Card Text</p>
           </div>
@@ -62,7 +51,15 @@
             <p class="card-text">Card Text</p>
           </div>
           <div class="card">
-            <p class="card-text">Card Text</p>
+            <div class="card-border">
+              <div class="text-border">
+                <p class="card-text">Card Text</p>
+              </div>
+              <p class="line">___________</p>
+              <div class="text-border">
+                <p class="card-text flipped-text">Card Text</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="flex-row">
@@ -117,7 +114,7 @@
             <p class="card-text">Card Text</p>
           </div>
         </div>
-        <div class="flex-row">
+        <div class="flex-row bottom-row">
           <div class="card">
             <p class="card-text">Card Text</p>
           </div>
@@ -144,4 +141,22 @@
     ></script>
     <script src="index.js"></script>
   </body>
+  <footer class="footer">
+    <form class="hint-submission">
+      <input
+        class="hint submissions"
+        placeholder="Type Hint Here"
+        type="text"
+        minlength="2"
+      />
+      <input
+        class="number-guess submissions"
+        placeholder="Guesses"
+        type="number"
+        min="1"
+        max="25"
+      />
+      <input class="submit-btn submissions" type="submit" />
+    </form>
+  </footer>
 </html>

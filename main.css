@@ -8,59 +8,41 @@ p {
 }
 .game-board {
   width: 100vw;
+  height: 100%;
   background-color: #141301;
   position: relative;
-  z-index: 30;
-  padding: 0 32px;
+  padding: 5px 32px;
 }
 /* Header */
 .header {
+  padding-top: 20px;
   background-color: #141301;
-  height: 5em;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: whitesmoke;
-  padding: 0 32px;
+  padding: 5px 32px;
 }
-.hint-submission {
-  font-size: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-}
-.submissions {
-  height: 30px;
-  background-color: whitesmoke;
-  transition: transform 0.3s ease-in-out;
-}
-.submissions:focus {
-  outline: none;
-  transform: scale(3);
-}
-.inputs {
-  font-size: 2em;
-}
-.submit-btn {
-  height: 35px;
-}
+
 .score {
   display: flex;
   justify-content: space-apart;
-  width: 80px;
+  width: 120px;
   padding-left: 15px;
 }
 .score h1 {
-  padding-right: 5px;
+  padding-right: 15px;
 }
 .score-wrapper {
-  padding-right: 10px;
-  width: 340px;
-  font-size: 17px;
+  padding-right: 120px;
+  width: 460px;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 .red-glow {
   text-shadow: 0 0 25px #ff0000;
@@ -75,13 +57,12 @@ p {
 /* Cards */
 .flex-wrapper {
   display: flex;
-  height: 100vh;
-  
+  height: 80vh;
 }
 .flex-row {
   display: flex;
   justify-content: space-between;
-  height: 15%;
+  height: 12vh;
   margin: 2% 0%;
 }
 .card {
@@ -89,12 +70,45 @@ p {
   border-radius: 20px;
   height: 100%;
   width: 18%;
+  color: #141301;
+  border: 4px solid whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #141301;
-  border: 4px solid whitesmoke;
+}
+.text-border {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #ffedd0;
+  text-align: center;
+  width: 90%;
+  height: 35%;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.card-border {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #946038;
+  border-radius: 20px;
+  height: 95%;
+  width: 95%;
+}
+.text-border p {
+  padding-bottom: 3px;
+}
+.line {
+  color: #946038;
+  padding-bottom: 13px;
+}
+.top-row {
+  margin-top: 0;
+}
+.bottom-row {
+  margin-bottom: 0;
 }
 .flipped-text {
   transform: scale(-1);
@@ -102,7 +116,7 @@ p {
 .card-reveal {
   background-size: cover;
   background-position: center;
-  background-color: #ffe1a8;
+  background-color: #fec693;
   border-radius: 20px;
   height: 100%;
   width: 18%;
@@ -130,18 +144,8 @@ p {
 }
 
 /* Side Bar */
-.sidebar {
-  /* background-color: #141301;
-  height: 100vh;
-  width: 5em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center; */
-}
 .pop-out-menu {
-  height: 100vh;
+  height: 50vh;
   width: 200px;
   background-color: aliceblue;
   /* background-image: url('./images/key.jpg'); */
@@ -151,6 +155,7 @@ p {
   position: absolute;
   right: 32px;
   top: 80px;
+  display: none;
 }
 .burger {
   font-size: 50px;
@@ -158,4 +163,48 @@ p {
 }
 nav {
   position: relative;
+}
+.footer {
+  height: 10vh;
+  background-color: #141301;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hint-submission {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+.submissions {
+  height: 40px;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease-in-out;
+}
+.submissions:focus {
+  outline: none;
+  transform: scale(3);
+  padding-bottom: 10px;
+}
+
+.submissions {
+  height: 44px;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.submit-btn {
+  height: 44px;
+  width: 100px;
+  padding: 20px 0 35px 0;
+}
+.number-guess {
+  width: 100px;
+}
+.inputs {
+  color: whitesmoke;
+  font-size: 5em;
+  z-index: 50;
 }

@@ -22,7 +22,8 @@ $(document).ready(function () {
     console.log(nmbguess);
     console.log(hint);
   });
+
   $('.burger').on('click', function () {
-    $('.');
+    $('.pop-out-menu').toggle();
   });
 });
